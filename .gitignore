@@ -1,0 +1,8 @@
+# Maven
+target/
+tomcat-install/
+overlays/
+
+# IntelliJ files
+*.iml
+.idea/
