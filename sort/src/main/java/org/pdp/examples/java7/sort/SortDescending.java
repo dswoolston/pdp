@@ -11,11 +11,11 @@ import java.util.List;
 public class SortDescending {
 
   public static void main(String[] args) throws IOException {
-    final Path target = Paths.get("in.txt");
-    final List<String> lines = Files.readAllLines(target, Charset.defaultCharset());
+    final Path path = Paths.get("in.txt");
+    final List<String> lines = Files.readAllLines(path, Charset.defaultCharset());
     Collections.sort(lines, Collections.reverseOrder());
-    for (String s : lines) {
-      System.out.println(s);
+    for (String line : lines) {
+      System.out.println(line);
     }
   }
 }
