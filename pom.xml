@@ -13,6 +13,9 @@
     <module>strings</module>
     <module>enum</module>
     <module>exceptions</module>
+    <module>composition</module>
+    <module>inheritance</module>
+    <module>staticaccess</module>
   </modules>
 
 
