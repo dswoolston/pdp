@@ -6,11 +6,11 @@ public class App {
 
   public static void main(String[] args) {
     try {
-      final BeanPropertyFile beanPropertyFile = new BeanPropertyFile("beans.xml");
+      final BeanPropertyFile beanPropertyFile = new BeanPropertyFile("composition.beans.xml");
       beanPropertyFile.appendProperty("name", "value");
       beanPropertyFile.close();
 
-      final PropertyFile propertyFile = new PropertyFile("feature.properties");
+      final PropertyFile propertyFile = new PropertyFile("composition.feature.properties");
       propertyFile.appendProperty("name", "value");
       propertyFile.close();
     }

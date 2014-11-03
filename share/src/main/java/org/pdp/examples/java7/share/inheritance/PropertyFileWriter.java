@@ -6,11 +6,10 @@ import java.io.IOException;
 
 public class PropertyFileWriter {
 
-  final File file;
   final FileWriter fileWriter;
 
   public PropertyFileWriter(String fileName) throws IOException {
-    file = new File(fileName);
+    final File file = new File(fileName);
     file.createNewFile();
     fileWriter = new FileWriter(file);
   }
