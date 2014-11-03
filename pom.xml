@@ -16,6 +16,7 @@
     <module>composition</module>
     <module>inheritance</module>
     <module>staticaccess</module>
+    <module>share</module>
   </modules>
 
 

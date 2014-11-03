@@ -1,12 +1,12 @@
-package org.pdp.examples.java7.composition;
+package org.pdp.examples.java7.share.composition;
 
 import java.io.IOException;
 
-public class BeanPropertyFile implements PropertyAppender {
+public class PropertyFile implements PropertyAppender {
 
   PropertyFileWriter writer;
 
-  public BeanPropertyFile(String fileName) throws IOException {
+  public PropertyFile(String fileName) throws IOException {
     writer = new PropertyFileWriter(fileName);
   }
 
@@ -16,15 +16,9 @@ public class BeanPropertyFile implements PropertyAppender {
 
   @Override
   public void appendProperty(String key, Object value) throws IOException {
-    writer.append("<property name=");
-    writer.append("\"");
     writer.append(key);
-    writer.append("\"");
-    writer.append(" value=");
-    writer.append("\"");
+    writer.append("=");
     writer.append(String.valueOf(value));
-    writer.append("\"");
-    writer.append("/>");
     writer.appendln();
   }
 }

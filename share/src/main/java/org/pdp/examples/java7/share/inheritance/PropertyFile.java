@@ -1,4 +1,4 @@
-package org.pdp.examples.java7.inheritance;
+package org.pdp.examples.java7.share.inheritance;
 
 import java.io.IOException;
 

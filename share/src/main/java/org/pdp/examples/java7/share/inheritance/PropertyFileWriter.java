@@ -1,4 +1,4 @@
-package org.pdp.examples.java7.composition;
+package org.pdp.examples.java7.share.inheritance;
 
 import java.io.File;
 import java.io.FileWriter;
