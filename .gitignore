@@ -1,8 +1,17 @@
-# Maven
-target/
-tomcat-install/
-overlays/
-
-# IntelliJ files
+# project settings files
+*.idea
+*.ipr
 *.iml
-.idea/
+*.iws
+.classpath
+.settings
+.project
+
+# files that maven/testng creates
+*.versionsBackup
+*target
+*classes.xml
+*groups.xml
+
+# misc
+*~
