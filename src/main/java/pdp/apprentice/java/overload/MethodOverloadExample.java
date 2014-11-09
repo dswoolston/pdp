@@ -4,13 +4,13 @@ package pdp.apprentice.java.overload;
 public class MethodOverloadExample {
 
   public static void main(String[] args) {
-    Foo foo = new Foo();
-    foo.execute(42);
-    foo.execute("Hello World");
-    foo.execute(Math.PI);
+    Overloaded overloaded = new Overloaded();
+    overloaded.execute(42);
+    overloaded.execute("Hello World");
+    overloaded.execute(Math.PI);
   }
 
-  private static class Foo {
+  private static class Overloaded {
 
     public void execute(int i) {
       execute((Object) i);
