@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class PropertyFile implements PropertyAppender {
 
-  PropertyFileWriter writer;
+  final PropertyFileWriter writer;
 
   public PropertyFile(String fileName) throws IOException {
     writer = new PropertyFileWriter(fileName);

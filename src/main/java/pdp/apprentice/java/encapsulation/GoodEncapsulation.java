@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Clients cannot alter the collection
+ * Clients can fetch but cannot alter the collection
  */
 public class GoodEncapsulation {
 

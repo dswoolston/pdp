@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Clients can alter the collection
+ * Clients can fetch and alter the collection
  */
 public class BadEncapsulation {
 

@@ -19,7 +19,7 @@ public class InterfaceExample {
 
     @Override
     public void execute() {
-      System.out.println("Doing Foo Stuff!");
+      System.out.println("ExecuteImplementation1.ExecuteImplementation1()");
     }
   }
 
@@ -27,7 +27,7 @@ public class InterfaceExample {
 
     @Override
     public void execute() {
-      System.out.println("Doing Bar Stuff!");
+      System.out.println("ExecuteImplementation2.ExecuteImplementation2()");
     }
   }
 

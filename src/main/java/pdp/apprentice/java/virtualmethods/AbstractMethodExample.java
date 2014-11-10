@@ -4,8 +4,8 @@ public class AbstractMethodExample {
 
   public static void main(String[] args) {
 
-    ConcreteClass foo = new ConcreteClass();
-    foo.execute();
+    ConcreteClass concreteClass = new ConcreteClass();
+    concreteClass.execute();
   }
 
   private static abstract class AbstractClass {
@@ -17,7 +17,7 @@ public class AbstractMethodExample {
 
     @Override
     public void execute() {
-      System.out.println("Doing Real Foo Stuff!");
+      System.out.println("ConcreteClass.execute()");
     }
   }
 

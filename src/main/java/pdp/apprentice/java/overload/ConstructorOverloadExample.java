@@ -47,7 +47,7 @@ public class ConstructorOverloadExample {
 
     @Override
     public String toString() {
-      return "Foo{" +
+      return "Overloaded{" +
         "a=" + a +
         ", b=" + b +
         ", c=" + c +

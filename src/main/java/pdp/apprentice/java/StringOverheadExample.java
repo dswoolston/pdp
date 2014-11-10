@@ -3,6 +3,9 @@ package pdp.apprentice.java;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Set -Xmx16m to reduce execution time
+ */
 public class StringOverheadExample {
 
   private static final int STRING_LENGTH = 100;
@@ -45,3 +48,21 @@ public class StringOverheadExample {
     System.out.println("And it corresponds to " + bytes + " bytes of memory.");
   }
 }
+
+/*
+Exception: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:2694)
+	at java.lang.String.<init>(String.java:203)
+	at java.lang.StringBuilder.toString(StringBuilder.java:405)
+	at pdp.apprentice.java.StringOverheadExample.generateString(StringOverheadExample.java:19)
+	at pdp.apprentice.java.StringOverheadExample.main(StringOverheadExample.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+Ran out of memory after 45073 strings were created.
+That corresponds to 4507300 charCount.
+And it corresponds to 10817520 bytes of memory.
+ */
